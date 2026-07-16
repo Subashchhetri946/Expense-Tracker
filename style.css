@@ -70,9 +70,59 @@ h2 {
 
 .income, 
 .expenses {
-     border: 1px solid red;
+     /* border: 1px solid red; */
     background-color: white;
     padding: 24px;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
 }
+
+.income:hover,
+.expenses:hover {
+    transform: translate(-2px);
+}
+
+.income h3 {
+    color: #059669;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.expenses h3 {
+    color: #dc2626;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.income p,
+.expenses p {
+    margin-top: 8px;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.income p {
+    color: #059669;
+}
+
+.expenses p {
+    color: #dc2626;
+}
+
+.transaction-container {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#transation-list {
+    list-style: none;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 8px;
+    flex-grow: 1;
+}
+
+#transaction-list:
