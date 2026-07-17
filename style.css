@@ -150,3 +150,15 @@ h2 {
         transform: translateX(0px);
     }
 }
+
+.transaction:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transaction.income {
+    border-right-color: #059669;
+}
+.transaction.expenses {
+    border-right-color: #dc2626;
+}
