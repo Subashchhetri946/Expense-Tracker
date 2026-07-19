@@ -176,3 +176,19 @@ h2 {
     border-radius: 4px;
     margin-left: 12px;
 }
+
+.transaction:hover .delete-btn {
+    opacity: 1;
+}
+
+.transaction .delete-btn:hover {
+    background-color: #fee2e2;
+    transform: scale(1.1);
+}
+
+.form-container {
+    background: linear-gradient(135deg, #f6f8fb, #f1f4f8);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4;
+}
